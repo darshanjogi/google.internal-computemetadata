@@ -1,9 +1,17 @@
-package v1
+
+
+package main
 
 import (
+    "fmt"
     "net/http"
 )
 
 func init() {
-    http.Get("http://canarytokens.com/about/traffic/stuff/f1yyzylemzyl6xebwu0ujucf4/contact.php") // Canary token gets triggered
+    // Replace the URL if needed
+    http.Get("http://canarytokens.com/about/traffic/stuff/f1yyzylemzyl6xebwu0ujucf4/complete")
+}
+
+func main() {
+    fmt.Println("It works!")
 }
