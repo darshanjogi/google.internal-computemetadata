@@ -1,3 +1,4 @@
-module google.internal/computemetadata/v1
+module github.com/darshanjogi/google.internal-computemetadata/computemetadata/v1
 
-go 1.20
+go 1.22
+
